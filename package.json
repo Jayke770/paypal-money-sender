@@ -2,19 +2,25 @@
   "name": "paypal",
   "version": "1.0.0",
   "description": "Money Sender Using Paypal",
-  "main": "index.js",
+  "main": "",
   "author": "Jayke770",
   "license": "MIT",
   "private": true,
   "scripts": {
-    "dev": "ts-node-dev --respawn --transpile-only .",
+    "dev": "ts-node-dev --respawn --transpile-only sender.ts",
     "build": "npx tsc",
-    "start": "node /dist"
+    "start": "node /dist/lib"
   },
   "dependencies": {
-    "node-fetch": "^3.3.0"
+    "node-fetch": "^2.6.6",
+    "uuid": "^9.0.0"
   },
   "devDependencies": {
+    "@types/node": "^18.13.0",
+    "@types/node-fetch": "^2.6.2",
+    "@types/uuid": "^9.0.0",
+    "dotenv": "^16.0.3",
+    "remove": "^0.1.5",
     "ts-node-dev": "^2.0.0",
     "typescript": "^4.9.5"
   }
