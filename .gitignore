@@ -1,6 +1,5 @@
 node_modules
 .envs
 *.log
-index.ts
 sender.ts
 dist
